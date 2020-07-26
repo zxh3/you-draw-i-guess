@@ -1,7 +1,14 @@
-.root {
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #91ad70;
+}
+
+.form {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #91AD70;
 }

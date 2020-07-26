@@ -1,12 +1,13 @@
 import { atom } from "recoil";
 
-export const playerState = atom({
-  key: "playerState",
-  default: { playerName: "", roomId: "" },
+const defaultPlayerName = localStorage.getItem("playerName") ?? "";
+
+export const playerNameState = atom({
+  key: "playerNameState",
+  default: defaultPlayerName,
 });
 
-// roomState should be updated by server only
-export const roomState = atom({
-  key: "roomState",
-  default: {},
+export const roomIdsState = atom({
+  key: "roomIdsState",
+  default: [],
 });
